@@ -12,6 +12,7 @@
                 width="200"
                 />
                 </v-toolbar-title>
+                <router-link class="mr-3 navbar-link" to="#">HOME</router-link>
                 <router-link class="mr-3 navbar-link" to="page2">COVID-19</router-link>
                 <router-link class="mr-3 navbar-link" to="#">SOLUTIONS</router-link>
                 <router-link class="mr-3 navbar-link" to="#">OUR TECHNOLOGY</router-link>
@@ -25,10 +26,17 @@
             <v-btn class="mr-3 navbar-link" to="#">LOGIN</v-btn>
         </v-app-bar>
         <v-main>
-          <v-img
-              alt="SUSSHEALTH Banner"
-              src="../assets/img2.jpg"
-          />
+          <div>
+            <v-img
+                alt="SUSSHEALTH Banner"
+                src="../assets/img5.jpg"
+            />
+            <!-- <v-container>
+              <v-row>
+                <h1>COVID-19 RESPONSES</h1>
+              </v-row>
+            </v-container> -->
+          </div>
           <div>
             <div class="section1">
               <v-container>

@@ -12,6 +12,7 @@
                 width="200"
                 />
                 </v-toolbar-title>
+                <router-link class="mr-3 navbar-link" to="#">HOME</router-link>
                 <router-link class="mr-3 navbar-link" to="page2">COVID-19</router-link>
                 <router-link class="mr-3 navbar-link" to="#">SOLUTIONS</router-link>
                 <router-link class="mr-3 navbar-link" to="#">OUR TECHNOLOGY</router-link>
@@ -24,10 +25,12 @@
             <v-btn class="mr-3 navbar-link" to="#">LOGIN</v-btn>
         </v-app-bar>
         <v-main>
-          <v-img class="banner-img"
-              alt="SUSSHEALTH Banner"
-              src="../assets/img1.jpg"
-          />
+          <v-container>
+            <v-img class="banner-img"
+                alt="SUSSHEALTH Banner"
+                src="../assets/img4.jpg"
+            />
+          </v-container>
           <v-container>
             <v-row>
               <v-col>
@@ -421,7 +424,7 @@ export default {
 </script>
 <style scoped>
 .banner-img{
-    max-height:450px;  
+    max-height:600px;  
 }
 .logo{
 margin-left:15px;
