@@ -26,7 +26,7 @@
         <v-main>
           <v-img class="banner-img"
               alt="SUSSHEALTH Banner"
-              src="../assets/banner.png"
+              src="../assets/img1.jpg"
           />
           <v-container>
             <v-row>
@@ -352,7 +352,7 @@
           </div>
           <div  class="segment-container">
             <v-container class="section4">
-              <v-row class="row-container">
+              <v-row style="margin-bottom:100px !important">
                   <v-col cols="6">
                     <div>
                       <v-img
@@ -402,8 +402,12 @@
               </v-row>
           </v-container>
           </div>
-          
         </v-main>
+        <v-footer absolute class= "teal lighten-1">
+          <v-card-text class="py-2 text-center">
+            {{ new Date().getFullYear() }} — <strong>Digital Solutions for covid-19</strong>
+          </v-card-text>
+        </v-footer>
   </v-app>
 </template>
 <script>
