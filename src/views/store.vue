@@ -6,14 +6,14 @@
           <v-img
           alt="SUSSHEALTH LOGO"
           class="logo mr-5"
-          to="/home"
+          to="/"
           contain
           src="../assets/logo1.png"
           transition="scale-transition"
           width="200"
           />
           </v-toolbar-title>
-          <router-link class="mr-3 navbar-link" to="/home">HOME</router-link>
+          <router-link class="mr-3 navbar-link" to="/">HOME</router-link>
           <router-link class="mr-3 navbar-link" to="/covid-19">COVID-19 AND SOLUTIONS</router-link>
           <router-link class="mr-3 navbar-link" to="#">OUR TECHNOLOGY</router-link>
           <router-link class="mr-3 navbar-link" to="#">WHO WE HELP</router-link>
