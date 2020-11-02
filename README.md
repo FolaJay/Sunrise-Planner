@@ -1,4 +1,4 @@
-# susshealth-mvp
+# sunrise-parties-planner
 
 ## Project setup
 ```

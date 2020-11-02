@@ -1,8 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import home from "../views/home.vue";
-import covid from "../views/covid-19.vue";
-import store from "../views/store.vue";
+// import covid from "../views/covid-19.vue";
+// import store from "../views/store.vue";
 
 Vue.use(VueRouter);
 
@@ -16,16 +16,16 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: home
   },
-  {
-    path: "/covid-19",
-    name: "covvid-19",
-    component: covid
-  },
-  {
-    path: "/store",
-    name: "store",
-    component: store
-  },
+  // {
+  //   path: "/covid-19",
+  //   name: "covvid-19",
+  //   component: covid
+  // },
+  // {
+  //   path: "/store",
+  //   name: "store",
+  //   component: store
+  // },
 ];
 
 const router = new VueRouter({

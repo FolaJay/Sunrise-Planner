@@ -16,7 +16,7 @@ export default {
 <style>
 *{
   font-size: 12px;
-  font-family: 'museo-sans',arial,sans-serif;
+  font-family: 'sans-serif';
 }
 span{
       color: rgb(0 0 0 / 70%);
