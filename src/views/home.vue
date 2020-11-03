@@ -351,8 +351,8 @@ color: #fff ;
   padding-bottom: 30px;
   text-align: center;
 }
-.section5-content-img{
-}
+/* .section5-content-img{
+} */
 .section5 h2{
   color: #293e40;
   font-size:45px ;
