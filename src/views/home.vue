@@ -20,7 +20,7 @@
         <router-link class="mr-3 navbar-link" to="/training"
           >OUR TRAINING</router-link
         >
-        <router-link class="mr-3 navbar-link" to="#">GALLERY</router-link>
+        <router-link class="mr-3 navbar-link" to="/gallery">GALLERY</router-link>
       </div>
     </v-app-bar>
     <v-main>
@@ -114,7 +114,7 @@
         <v-container class="section5">
           <h2>GALLERY</h2>
           <v-row>
-            <v-col v-for="n in 9" :key="n" class="d-flex child-flex" cols="4">
+            <v-col v-for="n in 4" :key="n" class="d-flex child-flex" cols="3">
               <v-img
                 :src="require(`../assets/${n}.jpg`)"
                 aspect-ratio="1"
@@ -134,6 +134,14 @@
                 </template>
               </v-img>
             </v-col>
+            <v-col cols="12" class="text-center">
+              <v-btn class="red lighten-1">
+              <router-link to="/gallery" class="custom-btn">
+                View More...
+              </router-link>
+              </v-btn>
+            </v-col>
+            
           </v-row>
         </v-container>
       </div>
@@ -176,7 +184,7 @@ export default {
           src: require("../assets/ttt.jpg")
         },
         {
-          src: require("../assets/10.jpg")
+          src: require("../assets/12.jpg")
         }
       ],
       links: [
@@ -255,17 +263,14 @@ export default {
   color: #293d40;
 }
 .custom-btn {
-  border: 0.2rem solid #293d40;
-  width: 150px;
   text-align: center;
   padding: 10px 0;
-  margin: 40px 200px;
   font-size: 16px;
+  text-decoration: none;
+  color:#ffffff;
 }
-.custom-btn:hover {
-  background-color: #293d40;
-  color: #fff;
-}
+/* .custom-btn:hover {
+} */
 .section4-content {
   padding-top: 50px;
   padding-bottom: 70px;
@@ -284,7 +289,7 @@ export default {
   text-align: center;
 }
 .section5 {
-  margin-bottom: 50px;
+  margin-bottom: 200px;
 }
 @media only screen and (max-width: 600px) {
   .section4-content-img {
