@@ -1,6 +1,5 @@
 <template>
   <v-app>
-    
     <router-view/>
   </v-app>
 </template>
@@ -14,11 +13,15 @@ export default {
 };
 </script>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 *{
   font-size: 12px;
-  font-family: 'sans-serif';
 }
 span{
-      color: rgb(0 0 0 / 70%);
+  color: rgb(0 0 0 / 70%);
+}
+body {
+  font-family: 'Roboto', sans-serif !important;
 }
 </style>
