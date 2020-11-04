@@ -1,28 +1,5 @@
 <template>
   <v-app>
-    <v-app-bar app color="white">
-      <v-toolbar-title>
-        <v-img
-          alt="SUNRISE LOGO"
-          class="logo mr-5"
-          to="/"
-          contain
-          src="../assets/sunset.png"
-          transition="scale-transition"
-          width="60"
-        />
-      </v-toolbar-title>
-      <h3 class="logo-text">SUNRISE PARTIES PLANNER</h3>
-      <v-spacer></v-spacer>
-      <div class="d-flex align-center">
-        <router-link class="mr-3 navbar-link" to="/">HOME</router-link>
-        <router-link class="mr-3 navbar-link" to="#About">ABOUT US</router-link>
-        <router-link class="mr-3 navbar-link" to="/training"
-          >OUR TRAINING</router-link
-        >
-        <router-link class="mr-3 navbar-link" to="/gallery">GALLERY</router-link>
-      </div>
-    </v-app-bar>
     <v-main>
       <div>
         <v-carousel cycle>
@@ -136,35 +113,15 @@
             </v-col>
             <v-col cols="12" class="text-center">
               <v-btn class="red lighten-1">
-              <router-link to="/gallery" class="custom-btn">
-                View More...
-              </router-link>
+                <router-link to="/gallery" class="custom-btn">
+                  View More...
+                </router-link>
               </v-btn>
             </v-col>
-            
           </v-row>
         </v-container>
       </div>
     </v-main>
-
-    <v-footer absolute class="red lighten-1" padless>
-      <v-row justify="center" no-gutters>
-        <v-btn
-          v-for="link in links"
-          :key="link"
-          color="white"
-          text
-          rounded
-          class="my-2"
-        >
-          {{ link }}
-        </v-btn>
-        <v-col class="py-4 text-center white--text" cols="12">
-          {{ new Date().getFullYear() }} —
-          <strong>SUNRISE PARTIES PLANNER</strong>
-        </v-col>
-      </v-row>
-    </v-footer>
   </v-app>
 </template>
 <script>
@@ -196,26 +153,6 @@ export default {
 };
 </script>
 <style scoped>
-.logo {
-  margin-left: 15px;
-}
-.logo-text {
-  color: #505152;
-  text-decoration: none;
-  padding: 10px 10px;
-  font-size: 20px;
-  font-weight: 100;
-}
-.navbar-link {
-  text-decoration: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #fd6750;
-}
-.navbar-link:hover {
-  color: #505152;
-}
 .section1 {
   background-color: #ffffff;
   text-align: center;
@@ -267,7 +204,7 @@ export default {
   padding: 10px 0;
   font-size: 16px;
   text-decoration: none;
-  color:#ffffff;
+  color: #ffffff;
 }
 /* .custom-btn:hover {
 } */

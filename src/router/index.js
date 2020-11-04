@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import home from "../views/home.vue";
 import gallery from "../views/gallery.vue";
-// import store from "../views/store.vue";
+import training from "../views/training.vue";
 
 Vue.use(VueRouter);
 
@@ -21,11 +21,11 @@ const routes = [
     name: "gallery",
     component: gallery
   },
-  // {
-  //   path: "/store",
-  //   name: "store",
-  //   component: store
-  // },
+  {
+    path: "/training",
+    name: "training",
+    component: training
+  },
 ];
 
 const router = new VueRouter({
